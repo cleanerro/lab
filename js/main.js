@@ -1,4 +1,4 @@
-const btn = document.querySelector('.gamburger-btn');
+const gmbBtn = document.querySelector('.gamburger-btn');
 const menu = document.querySelector('.gamburger-menu');
 const modalWindow = document.querySelector('.modal-window');
 const navBtn = document.querySelector('.nav-btn');
@@ -22,7 +22,7 @@ const aboutMenu = document.querySelector('.contacts-about')
 
 
 
-btn.addEventListener('click', () => {
+gmbBtn.addEventListener('click', () => {
    modalWindow.classList.remove('modal')
    menu.classList.remove('show')
    document.body.style.overflow = "auto"
@@ -59,11 +59,7 @@ businessBtn.addEventListener('click', () => {
 closeBtnPatient.addEventListener('click', () => {
    modalWindow.classList.remove('modal')
    subMenuPatient.classList.remove('show')
-   // subMenuBusiness.classList.remove('show')
-   // subMenuProvider.classList.remove('show')
    patientBtn.classList.remove('active')
-   // providerBtn.classList.remove('active')
-   // businessBtn.classList.remove('active')
    document.body.style.overflow = "auto"
 })
 

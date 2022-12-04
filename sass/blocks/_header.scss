@@ -18,7 +18,7 @@ header {
     .menu {
 
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
         height: 50px;
 
@@ -31,11 +31,12 @@ header {
         }
 
         .menu-items {
-            margin-right: 26px;
+            margin-right: 25px;
+            margin-left: 42px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 230px;
+            width: 243px;
 
             ul {
                 font-weight: 500;
@@ -49,7 +50,7 @@ header {
                 }
 
                 li:not(:last-child) {
-                    margin-right: 18px;
+                    margin-right: 10px;
                 }
             }
 
