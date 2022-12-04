@@ -1,0 +1,19 @@
+//Base
+
+@import "./base/base";
+@import "./base/reset";
+@import "./base/vars";
+
+//Blocks
+@import "./blocks/header";
+@import "./blocks/description";
+@import "./blocks/services";
+@import "./blocks/booking-test";
+@import "./blocks/instructions";
+@import "./blocks/inquiry";
+@import "./blocks/contact-us.scss";
+@import "./blocks/footer";
+@import "./blocks/gamburger-menu";
+@import "./blocks/sub-menu-patient";
+@import "./blocks/sub-menu-provider";
+@import "./blocks/sub-menu-business";

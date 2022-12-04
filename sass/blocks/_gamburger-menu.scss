@@ -1,0 +1,121 @@
+.modal {
+    background: rgba(255, 255, 255, 0.6);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.gamburger-menu {
+
+    margin-top: -107px;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    transform: translateX(100%);
+    transition: transform 0.4s;
+    z-index: 12;
+    background: #FFF;
+    margin-left: 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 33px;
+    
+
+    .gamburger-menu-list {
+
+        .gamburger-btn {
+            height: 40px;
+            width: 40px;
+            margin: 47px 46px 25px 195px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .top {
+                position: absolute;
+                height: 4px;
+                width: 31px;
+                rotate: 45deg;
+                background: #2B3968;
+                border-radius: 5px;
+            }
+
+            .bottom {
+                position: absolute;
+                height: 4px;
+                width: 31px;
+                rotate: -45deg;
+                background: #2B3968;
+                border-radius: 5px;
+            }
+        }
+
+        ul {
+            margin: 0 31px 0 31px;
+
+            li {
+                width: 205px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: rgba(19, 14, 84, 0.6);
+                padding: 14px 0px 14px 15px;
+
+                &:hover {
+                    background: rgba(19, 14, 83, 0.03);
+                    border-radius: 8px;
+                }
+
+            }
+
+        }
+
+    }
+
+    .gamburger-footer {
+
+        .gamburger-call {
+            background: #130E54;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            padding: 12px 84px;
+            width: 229px;
+            margin-left: 19px;
+            display: flex;
+            justify-content: center;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .gamburger-social {
+            margin-top: 16px;
+            margin-left: 80px;
+
+            img {
+                height: 17px;
+                margin-right: 17px;
+            }
+
+        }
+    }
+}
+
+.show{
+    transform: translateX(0);
+    transition: transform 0.4s;
+}
+

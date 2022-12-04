@@ -1,0 +1,181 @@
+.inquiry {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 45px;
+    margin-bottom: 35px;
+
+
+    
+
+    h1 {
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 100%;
+        color: $accent-color;
+        margin-bottom: 14px;
+    }
+
+    .inquiry-block {
+
+        .inquiry-list {
+
+            h2 {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: $accent-color;
+                margin-bottom: 25px;
+
+            }
+
+            .questions {
+                display: flex;
+                flex-wrap: wrap;
+
+                .question {
+                    width: 100%;
+                    min-width: 300px;
+                    max-width: 400px;
+                    border: 1px solid $second-color;
+                    border-radius: 10px;
+                    padding: 15px 0px 15px 17px;
+                    margin-bottom: 10px;
+                    background-image: url('../img/inquiry/plus.png');
+                    background-repeat: no-repeat;
+                    background-position: top 50% right 12px;
+                }
+            }
+        }
+
+        .variants-list {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+
+            h2 {
+                margin-top: 45px;
+                margin-bottom: 17px;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 100%;
+                color: $accent-color;
+                align-self: start;
+            }
+
+            .variants {
+
+                .variant {
+
+                    padding: 15px 0 15px 22px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: $accent-color;
+                    border: 1px solid $second-color;
+                    border-radius: 8px;
+                    margin-bottom: 10px;
+                    background-image: url('../img/inquiry/keyboard_backspace_blue.png');
+                    background-repeat: no-repeat;
+                    background-position: top 10px right 20px;
+                }
+
+
+                .active-variant {
+                    width: 100%;
+                    padding: 15px 0 15px 22px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #FFF;
+                    border-radius: 8px;
+                    margin-bottom: 10px;
+                    background-image: url('../img/inquiry/keyboard_backspace_white.png');
+                    background-repeat: no-repeat;
+                    background-position: top 10px right 20px;
+                    background-color: $second-color;
+                }
+
+
+            }
+        }
+
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .inquiry {
+        margin-top: 130px;
+        margin-bottom: 130px;
+
+        h1 {
+            font-size: 66px;
+            margin-bottom: 20px;
+        }
+
+        .inquiry-block {
+
+            display: flex;
+
+            .inquiry-list {
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                .questions {
+
+                    .question {
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 150%;
+                        padding: 27px 31px 27px 17px;
+                        margin-right: 10px;
+                        background-image: url('../img/inquiry/plus.png');
+                        background-repeat: no-repeat;
+                        background-position: top 50% right 36px;
+                        min-width: 300px;
+                        max-width: 434px;
+                    }
+                }
+            }
+
+            .variants-list {
+                max-width: 540px;
+                background-image:
+                    url('../img/inquiry/orange-arrow.png');
+                background-position: left 0% bottom 0%;
+                background-repeat: no-repeat;
+
+                h2 {
+                    margin-top: 0px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 186.36%;
+                }
+
+                .variants {
+                    position: relative;
+
+                    .variant {
+                        min-width: 300px;
+                        max-width: 540px;
+                        height: 40px;
+                        padding: 8px 0 8px 22px;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+
+                    .active-variant {
+                        max-width: 540px;
+                        padding: 8px 0 8px 22px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
