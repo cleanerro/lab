@@ -22,6 +22,10 @@ const aboutMenu = document.querySelector('.contacts-about')
 
 
 
+
+
+
+
 gmbBtn.addEventListener('click', () => {
    modalWindow.classList.remove('modal')
    menu.classList.remove('show')
@@ -34,47 +38,47 @@ navBtn.addEventListener('click', () => {
    document.body.style.overflow = "hidden"
 })
 
-patientBtn.addEventListener('click', () => {
+
+const menuToggle = (subMenu, btn) => {
    modalWindow.classList.toggle('modal')
-   subMenuPatient.classList.toggle('show')
-   patientBtn.classList.toggle('active')
+   subMenu.classList.toggle('show')
+   btn.classList.toggle('active')
    document.body.style.overflow = "hidden"
+}
+
+patientBtn.addEventListener('click', () => {
+   menuToggle(subMenuPatient, subMenuPatient)
 })
 
-
 providerBtn.addEventListener('click', () => {
-   modalWindow.classList.toggle('modal')
-   subMenuProvider.classList.toggle('show')
-   providerBtn.classList.toggle('active')
-   document.body.style.overflow = "hidden"
+   menuToggle(subMenuProvider, providerBtn)
 })
 
 businessBtn.addEventListener('click', () => {
-   modalWindow.classList.toggle('modal')
-   subMenuBusiness.classList.toggle('show')
-   businessBtn.classList.toggle('active')
-   document.body.style.overflow = "hidden"
+   menuToggle(subMenuBusiness, businessBtn)
 })
 
-closeBtnPatient.addEventListener('click', () => {
+
+
+const closeBtn = (subMenu, btn) => {
    modalWindow.classList.remove('modal')
-   subMenuPatient.classList.remove('show')
-   patientBtn.classList.remove('active')
+   subMenu.classList.remove('show')
+   btn.classList.remove('active')
    document.body.style.overflow = "auto"
+}
+
+
+
+closeBtnPatient.addEventListener('click', () => {
+   closeBtn (subMenuPatient, patientBtn)
 })
 
 closeBtnProvider.addEventListener('click', () => {
-   modalWindow.classList.remove('modal')
-   subMenuProvider.classList.remove('show')
-   providerBtn.classList.remove('active')
-   document.body.style.overflow = "auto"
+   closeBtn (subMenuProvider, providerBtn)
 })
 
-subMenuBusiness.addEventListener('click', () => {
-   modalWindow.classList.remove('modal')
-   subMenuBusiness.classList.remove('show')
-   businessBtn.classList.remove('active')
-   document.body.style.overflow = "auto"
+closeBtnBusiness.addEventListener('click', () => {
+   closeBtn (subMenuBusiness, businessBtn)
 })
 
 servisesBtn.addEventListener('click', () => {
@@ -84,4 +88,12 @@ servisesBtn.addEventListener('click', () => {
 aboutBtn.addEventListener('click', () => {
    aboutMenu.classList.toggle('active')
 })
+
+
+document.querySelectorAll('.sub-menu-item').forEach(n => n.addEventListener('click', () => {
+   closeBtn (subMenuPatient, patientBtn)
+   closeBtn (subMenuProvider, providerBtn)
+   closeBtn (subMenuBusiness, businessBtn)
+
+} ))
 
