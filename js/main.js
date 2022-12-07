@@ -47,7 +47,7 @@ const menuToggle = (subMenu, btn) => {
 }
 
 patientBtn.addEventListener('click', () => {
-   menuToggle(subMenuPatient, subMenuPatient)
+   menuToggle(subMenuPatient, patientBtn)
 })
 
 providerBtn.addEventListener('click', () => {

@@ -16,7 +16,8 @@
     }
 
     button.desc {
-        visibility: hidden;;
+        visibility: hidden;
+        ;
     }
 
 
@@ -57,27 +58,28 @@
     .description-img {
         position: relative;
         margin-top: 8px;
-       overflow: hidden;
+        overflow: hidden;
         height: 305px;
         border-radius: 18px;
         background-size: cover;
         background-repeat: no-repeat;
-      
-        height: 300px;
 
-        .im g-bg {
-           visibility: hidden;
+
+        .img-bg {
+            visibility: hidden;
         }
 
-        .i mg-bg2 {
-           visibility: hidden;
+        .img-bg2 {
+            visibility: hidden;
         }
+
         .img-main {
             position: absolute;
             top: 0px;
-            left: 0px;
+            left: auto;
             z-index: 2;
             width: 100%;
+
 
         }
 
@@ -130,12 +132,226 @@
 
 
 
+@media (min-width: 450px) {
+
+    .description .description-img {
+        margin: 0 auto;
+        height: 400px;
+    }
 
 
+
+}
+
+@media (min-width: 600px) {
+
+    .description .description-img {
+        margin: 0 auto;
+        height: 500px;
+        border-radius: 30px;
+    }
+
+    .description button {
+        font-weight: 400;
+        font-size: 16px;
+        height: 50px;
+    }
+
+    .description .description-text h1 {
+        font-size: 46px;
+    }
+
+    .description .description-text p {
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 800px) {
+
+    .description .description-img {
+        margin: 0 auto;
+        height: 750px;
+        border-radius: 50px;
+
+        .img-covid {
+            top: 13px;
+            left: 11px;
+            z-index: 2;
+            width: 150px;
+        }
+
+        .img-about-test {
+            top: 173px;
+            left: 11px;
+            z-index: 2;
+            width: 150px;
+        }
+
+        .img-make {
+            top: 333px;
+            left: 11px;
+            z-index: 2;
+            width: 150px;
+        }
+    }
+
+    .description button {
+        font-weight: 400;
+        font-size: 16px;
+        height: 50px;
+    }
+
+    .description .description-text h1 {
+        font-size: 46px;
+    }
+
+    .description .description-text p {
+        font-size: 16px;
+    }
+
+}
 
 @media (min-width: 1200px) {
     .description {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 774px;
+        padding-top: 46px;
+        position: relative;
+
+        .description-text {
+            margin-top: 20px;
+            margin-left: 10px;
+
+
+            .description-text-header {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 180%;
+                text-transform: uppercase;
+                color: #33B9FF;
+            }
+
+            h1 {
+
+                font-weight: 500;
+                font-size: 64px;
+                line-height: 100%;
+                text-transform: capitalize;
+                width: 600px;
+            }
+
+            p {
+                margin-top: 20px;
+                text-align: justify;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 180%;
+                color: #716E98;
+                width: 550px;
+            }
+
+        }
+
+
+        .description-img {
+            position: relative;
+            margin-top: 8px;
+            margin-right: 20px;
+            margin-left: 70px;
+            height: 600px;
+            min-width: 450px;
+            border-radius: 0;
+            overflow: visible;
+
+
+            .img-bg {
+                position: absolute;
+                top: 361px;
+                left: -227px;
+                z-index: -1;
+
+            }
+
+            .img-bg2 {
+                position: absolute;
+                top: 369px;
+                left: 564px;
+                z-index: 2;
+            }
+
+            .img-main {
+                position: absolute;
+                top: 0px;
+                left:100px;
+                z-index: 2;
+                width: 700px;
+
+            }
+
+            .img-covid {
+                position: absolute;
+                top: 254px;
+                left: -10px;
+                z-index: 2;
+                width: 200px;
+
+            }
+
+            .img-about-test {
+                position: absolute;
+                top:150px;
+                left: 700px;
+                z-index: 2;
+                width: 200px;
+
+            }
+
+            .img-make {
+                position: absolute;
+                top: 550px;
+                left: 700px;
+                z-index: 2;
+                width: 200px;
+            }
+        }
+
+        button.desc {
+            visibility: visible;
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            width: 229px;
+            height: 40px;
+            background: $accent-color;
+            border-radius: 8px;
+
+        }
+
+        button.mob {
+            visibility: hidden;
+        }
+
+        .img2 {
+            display: none;
+        }
+
+        .img1 {
+           display: none;
+        }
+
+    }
+}
+
+@media (min-width: 1800px) {
+    .description {
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         height: 774px;
         padding-top: 46px;
@@ -184,7 +400,7 @@
             height: 700px;
             min-width: 572px;
             border-radius: 0;
-            overflow:visible;
+            overflow: visible;
 
 
             .img-bg {
@@ -237,6 +453,7 @@
                 width: 170px;
             }
         }
+
         button.desc {
             visibility: visible;
             margin-top: 20px;
@@ -253,8 +470,10 @@
         }
 
         button.mob {
-            visibility: hidden;;
+            visibility: hidden;
+            ;
         }
+
         .img2 {
             position: absolute;
             top: 702px;

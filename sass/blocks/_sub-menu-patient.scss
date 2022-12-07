@@ -1,10 +1,10 @@
-.sub-menu-patient{
+.sub-menu-patient {
     height: 85vh;
     width: 251px;
     top: 94px;
     left: 108px;
     position: fixed;
-    transform: translateY(-120%);
+    transform: translateY(-200%);
     transition: transform 0.4s;
     z-index: 12;
     background: #FFF;
@@ -44,6 +44,10 @@
                     color: #FFF;
                     margin: 0 auto;
                 }
+            }
+
+            .sub-menu-social-desc {
+                display: none;
             }
         }
 
@@ -87,6 +91,7 @@
         line-height: 150%;
         text-decoration-line: underline;
         margin-left: 11px;
+        margin-top: 5px;
         color: #130E54;
         margin-bottom: 20px;
     }
@@ -99,15 +104,13 @@
         height: 100%;
 
         li {
-            width: 205px;
             font-weight: 400;
             font-size: 14px;
             line-height: 140%;
             color: #6F6C96;
 
             &:hover {
-                background: rgba(19, 14, 83, 0.03);
-                border-radius: 8px;
+                cursor: pointer;
             }
         }
     }
@@ -117,16 +120,13 @@
         flex-direction: column;
         align-items: center;
 
-
         .sub-menu-book {
             border: 1px solid #130E54;
-            ;
             border-radius: 8px;
             font-weight: 500;
             font-size: 14px;
             line-height: 16px;
             color: #130E54;
-            ;
             padding: 12px 0px;
             width: 229px;
             margin-bottom: 10px;
@@ -145,7 +145,7 @@
             font-size: 14px;
             line-height: 16px;
             color: #FFFFFF;
-            padding: 12px 84px;
+            padding: 12px 0px;
             width: 229px;
             display: flex;
             justify-content: center;
@@ -171,4 +171,108 @@
 .show {
     transform: translateX(0);
     transition: transform 0.4s;
+}
+
+@media (min-width: 1200px) {
+
+    .sub-menu-patient {
+        height: 234px;
+        width: 1534px;
+        top: 121px;
+        left: 208px;
+        position: fixed;
+        flex-direction: row;
+        justify-content: start;
+        margin-bottom: 39px;
+        box-shadow: 0px 15px 20px 3px rgba(103, 103, 103, 0.1);
+        border-radius: 16px;
+
+        .sub-menu-header {
+            border-radius: 0px 0px 0px 16px;
+            padding: 27px 32px;
+
+            .sub-menu-left {
+                
+                .item-sub-menu {
+                    width: 199px;
+
+                    a {
+                        font-size: 16px;
+                        line-height: 19px;
+
+                        &:hover{
+                            color: #2EB7FF;
+                        }
+                    }
+
+                    &:hover{
+                        background-color: #fff;
+                        
+                    }
+                }
+
+                .sub-menu-social-desc {
+                    display: flex;
+                    margin: 0 auto;
+                    padding-left: 17px;
+
+                    img {
+                        height: 17px;
+                        margin-right: 17px;
+
+                    }
+                }
+            }
+
+            .sub-menu-right {
+                display: none;
+            }
+        }
+
+        ul {
+            flex-wrap: wrap;
+            height: 187px;
+            width: 100%;
+            padding: 31px 0 0 65px;
+            margin: 0;
+
+            li {
+                font-size: 16px;
+                line-height: 150%;
+                color: #130E54;
+                margin-bottom: 27px;
+
+                .get-test {
+                    text-decoration-line: underline;
+                    color: #130E54;
+                    margin-bottom: 0px;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .sub-menu-footer {
+
+            .sub-menu-book {
+                display: none;
+            }
+
+            .sub-menu-call {
+                display: none;
+            }
+
+            .sub-menu-social {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1800px) {
+
+    .sub-menu-patient {
+        left: 253px;
+    }
+
 }

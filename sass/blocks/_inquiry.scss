@@ -106,6 +106,38 @@
 
 }
 
+@media (min-width: 600px) {
+    .inquiry {
+        align-items: center;
+        
+        h1 {
+           align-self: flex-start;
+           margin-left: 22px;
+        }
+    
+        .inquiry-block {
+    
+            .inquiry-list {
+
+                h2 {
+                    margin-left: 20px;
+                }
+
+                .questions {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: 20px;
+    
+                    .question {
+                        min-width: 500px;
+                        border-radius: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 1200px) {
     .inquiry {
         margin-top: 130px;
@@ -179,3 +211,78 @@
         }
     }
 }
+
+@media (min-width: 1800px) {
+    .inquiry {
+        margin-top: 130px;
+        margin-bottom: 130px;
+
+        h1 {
+            font-size: 66px;
+            margin-bottom: 20px;
+        }
+
+        .inquiry-block {
+
+            display: flex;
+
+            .inquiry-list {
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                .questions {
+
+                    .question {
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 150%;
+                        padding: 27px 31px 27px 17px;
+                        margin-right: 10px;
+                        background-image: url('../img/inquiry/plus.png');
+                        background-repeat: no-repeat;
+                        background-position: top 50% right 36px;
+                        min-width: 300px;
+                        max-width: 434px;
+                    }
+                }
+            }
+
+            .variants-list {
+                max-width: 540px;
+                background-image:
+                    url('../img/inquiry/orange-arrow.png');
+                background-position: left 0% bottom 0%;
+                background-repeat: no-repeat;
+
+                h2 {
+                    margin-top: 0px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 186.36%;
+                }
+
+                .variants {
+                    position: relative;
+
+                    .variant {
+                        min-width: 300px;
+                        max-width: 540px;
+                        height: 40px;
+                        padding: 8px 0 8px 22px;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+
+                    .active-variant {
+                        max-width: 540px;
+                        padding: 8px 0 8px 22px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+

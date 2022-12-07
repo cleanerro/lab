@@ -41,8 +41,50 @@
 
 }
 
+@media (min-width: 600px){
+    .contact-us .btn{
+        width: 80%;
+        margin: 11px auto 14px;
+    }
+}
+
 
 @media (min-width: 1200px) {
+
+    .contact-us {
+
+        .contact-us-business {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 150px;
+        }
+
+
+        .contact-us-provider {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 150px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .btn {
+            width: 236px;
+            margin-right: 140px;
+        }
+
+    }
+
+
+}
+
+@media (min-width: 1800px) {
 
     .contact-us {
 

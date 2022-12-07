@@ -5,6 +5,7 @@
     position: fixed;
     z-index: 10;
     transition: 0.3s;
+    overflow-y: hidden;
 }
 
 .gamburger-menu {
@@ -119,3 +120,18 @@
     transition: transform 0.4s;
 }
 
+@media (min-width: 1200px) {
+
+    .gamburger-menu.show{
+        transform: translateX(50%);
+        transition: transform 0.4s;
+    }
+}
+
+@media (min-width: 1800px) {
+
+    .gamburger-menu.show{
+        transform: translateX(50%);
+        transition: transform 0.4s;
+    }
+}
